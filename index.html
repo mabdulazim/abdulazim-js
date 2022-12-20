@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./index.js"></script>
+    <script>
+        const options = {
+            elementId: 'aaa',
+            paymentMethod: 'card',
+            publicKey: 'pk_live_Py1Pi9zlohowklpWJMxkOdrRPPNsAKKq',
+            clientSecret: 'csk_live_980e34da4a68ad88553ff745084616b0',
+        };
+        const onSubmit = (data) => {
+            console.log('data', data);
+        };
+        Paymob(options, onSubmit);
+    </script>
+    <div id="aaa"></div>
+</body>
+</html>
