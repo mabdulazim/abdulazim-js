@@ -4311,5 +4311,5 @@ class cs {
   }
 }
 export {
-  cs as Paymob
+  cs as default
 };
